@@ -1,0 +1,26 @@
+- what is package.json? It's a file that holds metadata for the project, allows npm handle project's dependencies
+- what is package-lock.json? it can not be published, is automatically generated for any operations where npm modifies
+either the node_modules tree, or package.json
+- what are node_modules? store build tools 
+- why do we need .gitignore file? .gitignore tells git which files (or patterns) it should ignore. It's usually 
+used to avoid committing transient files from your working directory that aren't useful to other collaborators, 
+such as compilation products, temporary files IDEs create, etc.
+- what is .env file, why do we need it? which npm package do we need to use to utilize .env?
+env file lets you customize your individual working environment variables
+
+- what are middlewares?
+each part of the application 
+Middleware functions are functions that have access to the request object (req), the response object (res), 
+and the next middleware function in the application’s request-response cycle. The next middleware function 
+is commonly denoted by a variable named next.
+
+- which npm package do we need for password hashing?
+
+bcrypt
+- what is "salt"?
+Salt hashing is a technique in which we take the user entered password and a random string of characters called 
+as salt, hash the combined string with a sutaible hashing algorithm and store the result in the database.
+what are "salt rounds"? 
+This is the cost factor that indicates the amount of time needed to calculate a single bcrypt hash.
+- what is authentication? what is authorization? authentication is the process 
+of verifying who a user is, while authorization is the process of verifying what they have access to.
